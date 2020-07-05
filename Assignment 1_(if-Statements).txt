@@ -1,0 +1,7 @@
+name = input ( "Enter the name: " )
+user_name = "Joseph"
+passport = "W@12"
+if name == user_name :
+    print ( f"Hello, {user_name}! The password is : {passport}" )
+else :
+    print ( f"Hello, {name}! See you later." )
