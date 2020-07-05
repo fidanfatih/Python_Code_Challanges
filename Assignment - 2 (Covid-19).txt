@@ -1,0 +1,15 @@
+age = input ("Are you a cigarette addict older than 75 years old? (Yes/No):").upper ( )
+chronic = input ("Do you have a severe chronic disease? (Yes/No):").upper ( )
+immune = input ("Is your immune system too weak? (Yes/No):").upper ( )
+risk_param = [ age , chronic , immune ]
+risk = list ( )
+for i in range ( 3 ):
+    if risk_param [ i ] == 'YES':
+        risk.append ( True )
+    elif risk_param [ i ] == 'NO':
+        risk.append ( False )
+
+if risk [ 0 ] or risk [ 1 ] or risk [ 2 ]:
+    print ( "\nYou are in risky group." )
+else:
+    print ( "\nYou are not in risky group." )
