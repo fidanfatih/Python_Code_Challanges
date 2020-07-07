@@ -1,0 +1,15 @@
+num=input("Enter a positive integer number: ").strip()
+if num.isnumeric() and int(num)>0:
+    digits,result=[],0
+    for i in num: digits.append(int(i))
+    for i in range(len(num)): result+=digits[i]**len(num)
+    if result==int(num):
+        print(f"{num} is an Armstrong number.")
+    else:
+        print ( f"{num} is not an Armstrong number." )
+elif num.replace("-","").isnumeric() and int(num)<=0:
+    print("Please enter a positive number.")
+elif (num.count(",")==1) != (num.count(".")==1) and (num.replace(",","").replace(".","").isnumeric() or num.replace(",","").replace(".","")[1:].isnumeric()):
+    print("Please enter an integer number.")
+else:
+    print("Do not use any entries other than numeric values.")
