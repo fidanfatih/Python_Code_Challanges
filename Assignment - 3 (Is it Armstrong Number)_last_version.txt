@@ -1,0 +1,9 @@
+num=input("Enter a positive integer number: ").strip()
+if num.isdigit() and int(num)>0:
+    digits,result=[],0
+    for i in num: digits.append(int(i))
+    for i in range(len(num)): result+=digits[i]**len(num)
+    if result==int(num): print(f"{num} is an Armstrong number.")
+    else: print ( f"{num} is not an Armstrong number." )
+else:
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
