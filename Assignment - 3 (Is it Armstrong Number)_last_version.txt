@@ -1,5 +1,5 @@
 num=input("Enter a positive integer number: ").strip()
-if num.isdigit() and int(num)>0:
+if num.isdecimal() and int(num)>0:
     digits,result=[],0
     for i in num: digits.append(int(i))
     for i in range(len(num)): result+=digits[i]**len(num)
