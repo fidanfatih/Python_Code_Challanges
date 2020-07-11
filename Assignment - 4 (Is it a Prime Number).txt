@@ -1,0 +1,10 @@
+n = int ( input ( "Enter a number: " ) )
+for i in range ( 2 , int ( n ** 0.5 ) + 1 ):
+    if not n % i:
+        print ( f"{n} is not a prime number" )
+        break
+else:
+    if n < 2:
+        print ( f"{n} is not a prime number" )
+    else:
+        print ( f"{n} is a prime number" )
