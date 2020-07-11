@@ -1,0 +1,6 @@
+fibonacciArray=[1]
+a, b = 0, 1
+while fibonacciArray[-1]!=55:
+    a , b = b , a + b
+    fibonacciArray.append( b )
+print( fibonacciArray )
