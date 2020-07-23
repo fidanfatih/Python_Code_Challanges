@@ -1,0 +1,2 @@
+text=input("Enter a text: ")
+print({i:text.count(i) for i in set(text)})
