@@ -1,2 +1,0 @@
-year=int(input("Enter a year: "))
-print(year,"is "+"not "* (not (year%100 and not year%4 or not year%400))+"a leap year")
