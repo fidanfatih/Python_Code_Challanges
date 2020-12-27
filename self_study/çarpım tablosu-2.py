@@ -1,3 +1,5 @@
+# Programimiz carpim tablosunu olusturmaktadir...
+
 str,row="ÇARPIM TABLOSU",list()
 print(f"{str:^77}\n")
 for _ in range(22): row.append([])
