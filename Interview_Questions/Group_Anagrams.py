@@ -85,5 +85,11 @@ def anagram(Input):
 anagram(input)
 
 
+def anagram(strs):
+    found = dict()
+    for i in strs:
+        found["".join(sorted(i))] = found.get("".join(sorted(i)), []) + [i]
+    return list(found.values())
 
+anagram(input)
 
