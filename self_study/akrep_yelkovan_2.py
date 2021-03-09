@@ -1,4 +1,5 @@
 data=float(input("Angle: "))
+data= data if data<180 else 360-data
 angle,time=[],[]
 for h in range(24):
     for m in range(60):
